@@ -27,7 +27,6 @@ public class Pila {
         }
         this.largo++;
     }
-    
     public void pop(){
         if (!Vacia()) {
             // Asigna como primer node al siguiente de la pila.
@@ -36,14 +35,13 @@ public class Pila {
             this.largo--;
         }
     }
-    
-    public void acomodarCubiertos(){ 
-            cima.getTrasteNodo().setCantidadCubiertos
+
+    public void acomodarCubiertos(){
+        cima.getTrasteNodo().setCantidadCubiertos
                 (cima.getTrasteNodo().getCantidadCubiertos()
-                +cima.getSiguiente().getTrasteNodo().getCantidadCubiertos());
-            cima.getSiguiente().getTrasteNodo().setCantidadCubiertos(0);
+                        +cima.getSiguiente().getTrasteNodo().getCantidadCubiertos());
+        cima.getSiguiente().getTrasteNodo().setCantidadCubiertos(0);
     }
-    
     /*
     public boolean search(int reference) {
         // Crea una copia de la pila.
