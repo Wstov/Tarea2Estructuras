@@ -6,7 +6,7 @@ public class Traste {
 
     public Traste() {
     }
-    
+
     public Traste(String tipotraste, int cantidadCubiertos){
         this.tipotraste=tipotraste;
         this.cantidadCubiertos=cantidadCubiertos;
@@ -30,10 +30,7 @@ public class Traste {
 
     @Override
     public String toString() {
-        return "Traste{" + "tipotraste=" + tipotraste 
+        return "Traste{" + "tipotraste=" + tipotraste
                 + ", cantidadCubiertos=" + cantidadCubiertos + '}';
     }
-    
-    
-    
 }
