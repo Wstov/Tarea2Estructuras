@@ -8,19 +8,19 @@ public class Pila {
         this.cima = null;
         this.largo = 0;
     }
-    
+
     public boolean Vacia(){ return cima == null;}
-    
+
     public int tamanio(){ return this.largo;}
-    
+
     public void push(Traste trastecito){
         Node newNode = new Node();
         newNode.setTrasteNodo(trastecito);
-        
+
         if (this.Vacia()){
             this.cima = newNode;
         }
-        else{  
+        else{
             newNode.setSiguiente(this.cima);
             this.cima = newNode;
             acomodarCubiertos();
@@ -42,6 +42,7 @@ public class Pila {
                         +cima.getSiguiente().getTrasteNodo().getCantidadCubiertos());
         cima.getSiguiente().getTrasteNodo().setCantidadCubiertos(0);
     }
+
     /*
     public boolean search(int reference) {
         // Crea una copia de la pila.
